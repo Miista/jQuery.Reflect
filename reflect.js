@@ -29,11 +29,6 @@ String.prototype.format = function() {
 			gradientColor: $("body").css("backgroundColor")
 		}, options);
 		
-/*
-		console.log(options.gradientColor);
-		console.log(internals.parseColor(options.gradientColor));
-		console.log(options.gradientColor === "undefined");
-*/
 		internals.normalizeOptions();
 		
 		/*
@@ -164,18 +159,6 @@ String.prototype.format = function() {
 		}
 	}
 })(jQuery);
-
-/*
-jQuery.extend({
-	rgb: function(red, green, blue) {
-		return {
-			red: red,
-			green: green,
-			blue: blue
-		};
-	}
-});
-*/
 
 /*
  * If no method with the name rgb exists, add it.
